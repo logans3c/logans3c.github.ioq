@@ -48,4 +48,4 @@ dash:
   avatar_path: /public/avatar.gif
 
 # Build settings
-theme: jekyll-dash
+theme: jekyll-theme-hacker
