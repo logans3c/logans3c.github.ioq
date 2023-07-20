@@ -10,7 +10,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.5"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
-gem 'jekyll-dash', '~> 1'
+gem 'jekyll-theme-hacker', '~> 0.2.0'
 gem 'jekyll-sass-converter', '~> 2.0'
 gem 'liquid-md5'
 gem 'jekyll-tagging'
