@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: defa
 title:  "Welcome to Jekyll!"
 date:   2023-07-20 13:49:56 +0300
 categories: jekyll update

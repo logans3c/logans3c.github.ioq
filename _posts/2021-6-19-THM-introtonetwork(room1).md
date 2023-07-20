@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: default
 title:  "Introductory Networking WriteUp – TryHackMe"
 description: this article is a writeup for room1 in intro to network category
 tags: Tryhackme
+date:   2021-07-20 13:49:56 +0300
+categories: jekyll update
 ---
 
 
