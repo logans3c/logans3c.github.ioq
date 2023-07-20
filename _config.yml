@@ -10,7 +10,9 @@ show_excerpts: false # set to true to show excerpts on the homepage
 tag_permalink_style: pretty
 tag_page_layout: tag_page
 tag_page_dir: tag
-
+# jekyll-paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
 # jekyll-dash date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 dash:
