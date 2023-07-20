@@ -7,9 +7,6 @@ description: > # this means to ignore newlines until "show_exerpts:"
   <br/>He occasionally blogs about software design, continuous integration and game development with Godot Engine.
 show_excerpts: false # set to true to show excerpts on the homepage
 
-paginate: 5
-paginate_path: "/blog/page:num/"
-
 tag_permalink_style: pretty
 tag_page_layout: tag_page
 tag_page_dir: tag
