@@ -4,7 +4,7 @@ title:  "Detailed Writeup for php gadget chains"
 description: Detailed Writeup for php gadget chains
 tags: PHP
 date:   2023-07-20 13:49:56 +0300
-categories: jekyll update
+categories: _posts
 ---
 ```php
 <?php

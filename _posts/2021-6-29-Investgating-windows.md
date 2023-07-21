@@ -4,7 +4,7 @@ title:  "Investigating Windows"
 description: Youtube Video of Investigating Windows room 
 tags: Tryhackme
 date:   2021-01-20 13:49:56 +0300
-categories: jekyll update
+categories: _posts
 ---
 
 # ..
