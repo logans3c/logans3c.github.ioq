@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll-theme-hydejack', '~> 9.1', '>= 9.1.6'
+gem "jekyll-theme-hydejack"
 gem 'jekyll-sass-converter', '~> 2.0'
 gem 'liquid-md5'
 gem 'jekyll-tagging'

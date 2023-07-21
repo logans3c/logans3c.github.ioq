@@ -108,7 +108,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-tagging
-  jekyll-theme-hydejack (~> 9.1, >= 9.1.6)
+  jekyll-theme-hydejack
   jekyll-titles-from-headings
   liquid-md5
 
