@@ -6,7 +6,7 @@ image:
   path: /assets/img/blog/dese.jpg
 tags: PHP
 date:   2023-07-20 13:49:56 +0300
-category: php
+category: PHP
 ---
 ```php
 <?php
@@ -74,20 +74,20 @@ class DefaultMap {
 
 The `CustomTemplate` class has three properties: `$default_desc_type`, `$desc`, and `$product`. The `$default_desc_type` property is set to the value of the `$desc_type` parameter of the constructor, which defaults to 'HTML_DESC'. The `$desc` property is set to a new instance of the `Description` class. The `$product` property is not set yet.
 
-1-The CustomTemplate class defines a constructor method that takes an optional $desc_type parameter. In the constructor, a new instance of the Description class is created and stored in the $desc property. The value of the $default_desc_type property is set to the value of the $desc_type parameter, or 'HTML_DESC' if the parameter is not provided. The build_product() method is called to create a new instance of the Product class and store it in the $product property.
+1-The CustomTemplate class defines a constructor method that takes an optional `$desc_type` parameter. In the constructor, a new instance of the Description class is created and stored in the `$desc` property. The value of the `$default_desc_type` property is set to the value of the `$desc_type parameter`, or 'HTML_DESC' if the parameter is not provided. The `build_product()` method is called to create a new instance of the Product class and store it in the `$product` property.
 
-> we can set another values for $desc and $default_desc_type because once the constructor is executed the values we provided in our injection object will set to them.
+> we can set another values for `$desc` and `$default_desc_type` because once the constructor is executed the values we provided in our injection object will set to them.
 > 
 
-2-The CustomTemplate class defines two magic methods: __sleep() and __wakeup(). __sleep() is called when the object is serialized, and it returns an array of the properties that should be serialized. In this case, it returns the $default_desc_type and $desc properties. __wakeup() is called when the object is unserialized, and it is used to rebuild any state that was lost during serialization. In this case, it calls the build_product() method to rebuild the $product property.
+2-The CustomTemplate class defines two magic methods: `__sleep()` and `__wakeup()`. `__sleep()` is called when the object is serialized, and it returns an array of the properties that should be serialized. In this case, it returns the `$default_desc_type` and `$desc` properties. `__wakeup()` is called when the object is unserialized, and it is used to rebuild any state that was lost during serialization. In this case, it calls the `build_product()` method to rebuild the `$product` property.
 
-3-The Product class has one property: $desc. It defines a constructor method that takes a $default_desc_type parameter and a $desc parameter. In the constructor, the $desc property is set to the value of $desc->$default_desc_type. This means that the $desc property is set to the value of $desc for the key specified by $default_desc_type.
+3-The Product class has one property: `$desc`. It defines a constructor method that takes a `$default_desc_type` parameter and a `$desc` parameter. In the constructor, the `$desc` property is set to the value of `$desc->$default_desc_type`. This means that the `$desc` property is set to the value of `$desc` for the key specified by `$default_desc_type`.
 
-4-The build_product() method in the CustomTemplate class creates a new instance of the Product class and passes in the $default_desc_type and $desc properties. The Product constructor sets the $desc property of the new Product object to the value of $desc for the key specified by $default_desc_type. The Product object is then stored in the $product property of the CustomTemplate object.
+4-The `build_product()` method in the CustomTemplate class creates a new instance of the Product class and passes in the $default_desc_type and `$desc properties`. The Product constructor sets the $desc property of the new Product object to the value of `$desc` for the key specified by `$default_desc_type`. The Product object is then stored in the `$product` property of the CustomTemplate object.
 
-5-So, when we create a new CustomTemplate object, an instance of the Description class is created and stored in the $desc property. The $default_desc_type property is set to the value of the $desc_type parameter of the constructor, or 'HTML_DESC' if the parameter is not provided. The build_product() method is called to create a new instance of the Product class and store it in the $product property. The Product constructor sets the $desc property of the new Product object to the value of $desc for the key specified by $default_desc_type.
+5-So, when we create a new CustomTemplate object, an instance of the Description class is created and stored in the $desc property. The $default_desc_type property is set to the value of the $desc_type parameter of the constructor, or 'HTML_DESC' if the parameter is not provided. `The build_product()` method is called to create a new instance of the Product class and store it in the $product property. The Product constructor sets the $desc property of the new Product object to the value of $desc for the key specified by $default_desc_type.
 
-6-If the CustomTemplate object is serialized and then unserialized, the __wakeup() method is called to rebuild the $product property using the build_product() method.
+6-If the CustomTemplate object is serialized and then unserialized, the `__wakeup()` method is called to rebuild the $product property using the `build_product()` method.
 
 CONCLUSIN of CustomTemplate and Product class :
 
@@ -205,12 +205,12 @@ the output will be: `TzoxNDoiQ3VzdG9tVGVtcGxhdGUiOjI6e3M6MzM6IgBDdXN0b21UZW1wbGF
 
 request :
 
-![request.png](WEB%20EXPLOITATION/request.png)
+![request.png](/media/WEB_EXPLOITAION/request.png)
 
 response: you will receive an error in the response but the lab is actually solved.
 
-![error.png](WEB%20EXPLOITATION/error.png)
+![error.png](/media/WEB_EXPLOITAION/error.png)
 
 solved :
 
-![solved.png](WEB%20EXPLOITATION/solved.png)
+![solved.png](/media/WEB_EXPLOITAION//solved.png)
