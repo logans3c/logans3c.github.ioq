@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: post
 title:  "How to pwn cybertalents remote machine"
 description: Writeup for "remote" Machine
 tags: CyberTalents
 date:   2021-07-10 13:49:56 +0300
-categories: _posts
 ---
 ### Hi there! today we well pwn “remote” machine on CyberTalents :  
 ![whois](https://raw.githubusercontent.com/logans3c/logans3c.github.io/master/media/remot_cybertalents/whois%234.png)  

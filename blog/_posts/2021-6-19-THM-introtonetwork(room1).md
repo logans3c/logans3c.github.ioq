@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: post
 title:  "Introductory Networking WriteUp – TryHackMe"
 description: this article is a writeup for room1 in intro to network category
 date:   2021-07-20 13:49:56 +0300
-categories: _posts
 ---
 
 
