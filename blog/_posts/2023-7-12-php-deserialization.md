@@ -8,6 +8,15 @@ tags: PHP
 date:   2023-07-20 13:49:56 +0300
 category: PHP
 ---
+If We check the source of the web pages we will find that there is a single line of code in all of them:
+
+<!-- TODO: Refactor once /cgi-bin/libs/CustomTemplate.php is updated -->
+
+So we check this link in the browser, we can get a copy of editor backup version of this file by adding a tilde(~) at the end of the file like this:
+
+https://YOUR-LAB-ID.web-security-academy.net/cgi-bin/libs/CustomTemplate.php~
+you can read about this concept here: https://unix.stackexchange.com/questions/76189/what-does-the-tilde-mean-at-the-end-of-a-filename
+and this is the source.
 ```php
 <?php
 
