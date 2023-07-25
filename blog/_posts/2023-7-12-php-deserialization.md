@@ -74,36 +74,36 @@ class DefaultMap {
 
 The `CustomTemplate` class has three properties: `$default_desc_type`, `$desc`, and `$product`. The `$default_desc_type` property is set to the value of the `$desc_type` parameter of the constructor, which defaults to 'HTML_DESC'. The `$desc` property is set to a new instance of the `Description` class. The `$product` property is not set yet.
 
-1-The CustomTemplate class defines a constructor method that takes an optional `$desc_type` parameter. In the constructor, a new instance of the Description class is created and stored in the `$desc` property. The value of the `$default_desc_type` property is set to the value of the `$desc_type parameter`, or 'HTML_DESC' if the parameter is not provided. The `build_product()` method is called to create a new instance of the Product class and store it in the `$product` property.
+1-The `CustomTemplate` class defines a constructor method that takes an optional `$desc_type` parameter. In the constructor, a new instance of the `Description` class is created and stored in the `$desc` property. The value of the `$default_desc_type` property is set to the value of the `$desc_type parameter`, or 'HTML_DESC' if the parameter is not provided. The `build_product()` method is called to create a new instance of the `Product` class and store it in the `$product` property.
 
 > we can set another values for `$desc` and `$default_desc_type` because once the constructor is executed the values we provided in our injection object will set to them.
 > 
 
-2-The CustomTemplate class defines two magic methods: `__sleep()` and `__wakeup()`. `__sleep()` is called when the object is serialized, and it returns an array of the properties that should be serialized. In this case, it returns the `$default_desc_type` and `$desc` properties. `__wakeup()` is called when the object is unserialized, and it is used to rebuild any state that was lost during serialization. In this case, it calls the `build_product()` method to rebuild the `$product` property.
+2-The `CustomTemplate` class defines two magic methods: `__sleep()` and `__wakeup()`. `__sleep()` is called when the object is serialized, and it returns an array of the properties that should be serialized. In this case, it returns the `$default_desc_type` and `$desc` properties. `__wakeup()` is called when the object is unserialized, and it is used to rebuild any state that was lost during serialization. In this case, it calls the `build_product()` method to rebuild the `$product` property.
 
 3-The Product class has one property: `$desc`. It defines a constructor method that takes a `$default_desc_type` parameter and a `$desc` parameter. In the constructor, the `$desc` property is set to the value of `$desc->$default_desc_type`. This means that the `$desc` property is set to the value of `$desc` for the key specified by `$default_desc_type`.
 
-4-The `build_product()` method in the CustomTemplate class creates a new instance of the Product class and passes in the $default_desc_type and `$desc properties`. The Product constructor sets the $desc property of the new Product object to the value of `$desc` for the key specified by `$default_desc_type`. The Product object is then stored in the `$product` property of the CustomTemplate object.
+4-The `build_product()` method in the `CustomTemplate` class creates a new instance of the `Product` class and passes in the `$default_desc_type` and `$desc properties`. The `Product` constructor sets the `$desc` property of the new `Product` object to the value of `$desc` for the key specified by `$default_desc_type`. The `Product` object is then stored in the `$product` property of the `CustomTemplate` object.
 
-5-So, when we create a new CustomTemplate object, an instance of the Description class is created and stored in the $desc property. The $default_desc_type property is set to the value of the $desc_type parameter of the constructor, or 'HTML_DESC' if the parameter is not provided. `The build_product()` method is called to create a new instance of the Product class and store it in the $product property. The Product constructor sets the $desc property of the new Product object to the value of $desc for the key specified by $default_desc_type.
+5-So, when we create a new `CustomTemplate` object, an instance of the `Description` class is created and stored in the `$desc` property. The `$default_desc_type` property is set to the value of the `$desc_type` parameter of the constructor, or 'HTML_DESC' if the parameter is not provided. `The build_product()` method is called to create a new instance of the `Product` class and store it in the `$product` property. The Product constructor sets the `$desc` property of the new `Product` object to the value of `$desc` for the key specified by `$default_desc_type`.
 
-6-If the CustomTemplate object is serialized and then unserialized, the `__wakeup()` method is called to rebuild the $product property using the `build_product()` method.
+6-If the `CustomTemplate` object is serialized and then unserialized, the `__wakeup()` method is called to rebuild the `$product` property using the `build_product()` method.
 
-CONCLUSIN of CustomTemplate and Product class :
+CONCLUSIN of `CustomTemplate` and `Product` class :
 
-- we can control $desc and $default_desc_type
+- we can control `$desc` and `$default_desc_type`
 - the class have the magic method `__wakeup` and it calls `build_product()`
-- `build_product()` The build_product() method in the CustomTemplate class creates a new object of the Product class and passes the $default_desc_type and $desc properties of the CustomTemplate class to the constructor of Product.
-- The Product constructor sets the $desc property of the new Product object to the value of $desc (CustomTemplate property) for the key specified by $default_desc_type so The purpose of the constructor method is to set the value of the $desc property. It does this by accessing the value of the $default_desc_type parameter on the $desc object, and then assigning that value to the $desc property of the Product object.
+- `build_product()` The `build_product()` method in the `CustomTemplate` class creates a new object of the `Product` class and passes the `$default_desc_type` and `$desc properties` of the `CustomTemplate` class to the constructor of `Product`.
+- The `Product` constructor sets the `$desc` property of the new `Product` object to the value of `$desc` (CustomTemplate property) for the key specified by `$default_desc_type` so The purpose of the constructor method is to set the value of the `$desc` property. It does this by accessing the value of the `$default_desc_type` parameter on the `$desc` object, and then assigning that value to the `$desc` property of the `Product` object.
 
 Here's a breakdown of what's happening in the constructor method:
 
--$this->desc refers to the $desc property of the Product object.
--$desc is an object that is passed in as a parameter to the constructor.
--$default_desc_type is a string that is also passed in as a parameter to the constructor.
--$desc->$default_desc_type accesses the property of the $desc object that has the same name as the value of $default_desc_type.
+-`$this->desc` refers to the `$desc` property of the `Product` object.
+-`$desc` is an object that is passed in as a parameter to the constructor.
+-`$default_desc_type` is a string that is also passed in as a parameter to the constructor.
+-`$desc->$default_desc_type` accesses the property of the `$desc` object that has the same name as the value of `$default_desc_type`.
 
-We don’t need Description Class.
+We don’t need `Description` Class.
 
 DefaultMap : 
 
