@@ -359,16 +359,16 @@ i visit the interesting one `/dashboard`
 
 I was able to see the `/dashboard` endpoint after replacing the flask token with the altered one, which was a page for post . It printed the username and the text of the post after attempting to publish (post).
 
-So I tested the SSTI vulnerability with the typical ` {{7*7}} ` It also worked:
+So I tested the SSTI vulnerability with the typical ```{{7*7}}``` It also worked:
 
 ![ssti.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/ssti.png)
 
-so i tried to get the flag with ` {{config}} `
+so i tried to get the flag with ```{{config}}```
 
 but there is a filter so i can not get the response i want 
 
 ![config.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/config.png)
 
-so i just tried to make a url encoding the `config` as a first try and woooow i got the flag.
+so i just tried to make a url encoding the ```{{config}}``` as a first try and woooow i got the flag.
 
 ![flag.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/flag.png)
