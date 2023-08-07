@@ -8,23 +8,21 @@ tags: CTF
 date:   2023-08-06 13:49:56 +0300
 category: CTF
 ---
-# BLOG
-
 HI I am Mohammed Ashraf AKA logan0x
 
 and this is my Writeup for ASCWG QUAL 2023
 
 WE GOT 7TH IN THE QUALIFICATIONS .
 
-![ASCWG.jpg](BLOG%2034a686eb96fd436bb80286dfa0e092a3/ASCWG.jpg)
+![ASCWG.jpg](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/ASCWG.jpg)
 
 AND WE SOLVED `5 OUT OF 7` WEB CHALLENGES
 
-![Screenshot (336).png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(336).png)
+![Screenshot (336).png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(336).png)
 
 # SADQL (600 POINT - MEDIUM )
 
-![logo_1.png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/logo_1.png)
+![logo_1.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/logo_1.png)
 
 JUST a basic login page and no other directories found
 
@@ -87,11 +85,11 @@ the error indicates that `addslashes()` is used to escape the input , it’s my 
 
 and this is our payload :
 
-![before_filter.png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/before_filter.png)
+![before_filter.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/before_filter.png)
 
 with a little focus on the error you can understand that the application have some filters as he filtered `or` from our payload , so we will try to bypass it 
 
-![or_filter.png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/or_filter.png)
+![or_filter.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/or_filter.png)
 
 so we are able to skip filter for or successfully. but there is another filter for white spaces.
 
@@ -99,13 +97,13 @@ i just used  [basic technique](https://portswigger.net/support/sql-injection-byp
 
 so let’s craft the final payload :
 
-![result_1.png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/result_1.png)
+![result_1.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/result_1.png)
 
 BINGOOOOOO WE GET OUR FLAG !!!!!!!!!!!!
 
 # INIECTIO ( 300 POINT - EASY )
 
-![spaces_cOm0nldr8lH1TylcbDG1_uploads_rqMbMcF69qE0qS6sLgom_image.webp](BLOG%2034a686eb96fd436bb80286dfa0e092a3/spaces_cOm0nldr8lH1TylcbDG1_uploads_rqMbMcF69qE0qS6sLgom_image.webp)
+![spaces_cOm0nldr8lH1TylcbDG1_uploads_rqMbMcF69qE0qS6sLgom_image.webp](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/spaces_cOm0nldr8lH1TylcbDG1_uploads_rqMbMcF69qE0qS6sLgom_image.webp)
 
 Translation of the challenge description :
 
@@ -241,21 +239,21 @@ SO it can’t be executed.
 
 again , after time a good idea get into my mind and it was why not to copy the `flag.php` to `flag.txt` and access it with  [http://34.18.3.149:8000/](http://34.18.3.149:8000/xchal.php?name=)flag.txt
 
-![Screenshot (318).png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(318).png)
+![Screenshot (318).png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(318).png)
 
 Let’s try to access the flag :
 
-![Screenshot (319).png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(319).png)
+![Screenshot (319).png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(319).png)
 
 WE GOT IT !!!!!!!!!!!!!!!!!!!
 
 # N1 ( 200 POINT - EASY )
 
-![0 KQF_UXJGquiVKpa0.webp](BLOG%2034a686eb96fd436bb80286dfa0e092a3/0_KQF_UXJGquiVKpa0.webp)
+![0 KQF_UXJGquiVKpa0.webp](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/0_KQF_UXJGquiVKpa0.webp)
 
 After opening the link i found no thing but :
 
-![banner.webp](BLOG%2034a686eb96fd436bb80286dfa0e092a3/banner.webp)
+![banner.webp](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/banner.webp)
 
 after checking the source code i did not find anything so i checked `robotx.txt` and found that 
 
@@ -276,7 +274,7 @@ so tried to access the flag with : `http://ip:port/?url=/tmp/ASCWG/flag.txt`
 
 this time the server gives it another response :
 
-![Screenshot (323).png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(323).png)
+![Screenshot (323).png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(323).png)
 
 i tried another paths and some response, i tried also to set the value of of the parameter to be an empty value `?url=` but i returned with the same response 
 
@@ -288,11 +286,11 @@ so the final payload : `?url=%252Ftmp%252FASCWG%252Fflag.txt` and i Finally got 
 
 # Father’s Light ( 600 Points - Medium )
 
-![specs.webp](BLOG%2034a686eb96fd436bb80286dfa0e092a3/specs.webp)
+![specs.webp](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/specs.webp)
 
 After clicking the link you will find this login panel at `/login`
 
-![banner.webp](BLOG%2034a686eb96fd436bb80286dfa0e092a3/banner%201.webp)
+![banner.webp](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/banner%201.webp)
 
 First thing i did is directory fuzzing 
 
@@ -310,13 +308,13 @@ from this source code know some juicy information
 
 i logged in and found that :   
 
-![Screenshot (325).png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(325).png)
+![Screenshot (325).png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(325).png)
 
 REGULAR USER !!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 immediately, i fire my burp and i found there is a token in the request
 
-```php
+```txt
 .eJyrVsosjk9Myc3MU7JKS8wpTtVRKi1OLYrPTFGyUjI0M1KC8PMSc1OBAhCFtQDj5xGP.ZM13MQ.Cl1kJQYZhQHtS2l9L8CeRysHqcc
 ```
 
@@ -328,7 +326,7 @@ the whole scenario came to my mind in this moment : we will decode the token , b
 
 let’s do it :
 
-![Screenshot (329).png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(329).png)
+![Screenshot (329).png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(329).png)
 
 so it’s clear now , we will brute force the secret the modify the token to be like that `{"is_admin":true,"user_id":"1","username":"admin"}`
 
@@ -336,7 +334,7 @@ and in these tasks we will use the awesome tool [Flask-Unsign](https://github.co
 
 1- brute force the secret key
 
-![brute.png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/brute.png)
+![brute.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/brute.png)
 
 the secret key is `amorlove`
 
@@ -349,7 +347,7 @@ logan0x@logan0x:~/Flask-Unsign/flask_unsign$ flask-unsign --sign --cookie "{'is_
 
 now let’s get the flag :
 
-![Screenshot (331).png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(331).png)
+![Screenshot (331).png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(331).png)
 
 wait whatttt where is the flag ???
 
@@ -357,20 +355,20 @@ let’s check the directories we FUZZ previously
 
 i visit the interesting one `/dashboard`
 
-![Screenshot (333).png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(333).png)
+![Screenshot (333).png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(333).png)
 
 I was able to see the "/dashboard" endpoint, which was a page for posting after replacing the flask token with the altered one. It printed the username and the text of the post after attempting to publish something.
 
 So I tested the SSTI vulnerability with the typical {{7*7}} It also worked:
 
-![ssti.png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/ssti.png)
+![ssti.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/ssti.png)
 
 so i tried to get the flag with `{{config}}`
 
 but there is a filter so i can not get the response i want 
 
-![config.png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/config.png)
+![config.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/config.png)
 
 so i just tried to make a url encoding to `config` as a first try and i woooow i got the flag.
 
-![flag.png](BLOG%2034a686eb96fd436bb80286dfa0e092a3/flag.png)
+![flag.png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/flag.png)
