@@ -114,7 +114,7 @@ so from description we understand that it’s a type of injection.
 
 description link was :
 
-> [http://34.18.3.149:8000/](http://34.18.3.149:8000/xchal.php?name=)xchal.php
+> [http://34.18.3.149:8000/xchal.php?name=xchal.php]
 > 
 
 so i tried to fetch the source using `~` , so i made a request to `http://IP:port/xchal.php~`
@@ -181,7 +181,7 @@ in this part i was not able to bypass this blacklist , but after a lot of resear
 
 Payload :
 
-> [http://34.18.3.149:8000/xchal.php?name=](http://34.18.3.149:8000/xchal.php?name=)"%26%26+var_dump(scandir('.'));%23
+> [http://34.18.3.149:8000/xchal.php?name="%26%26+var_dump(scandir('.'));%23]
 > 
 
 Response :
@@ -231,13 +231,13 @@ Response :
 
  we can see that there is a file called `flag.php`
 
-so i tried to access it directly from the browser [http://34.18.3.149:8000/](http://34.18.3.149:8000/xchal.php?name=)flag.php
+so i tried to access it directly from the browser [http://34.18.3.149:8000//xchal.php?name=flag.php]
 
 but it throw an error because it’s extension is php but the file just have a  ASCWG{FLAG}
 
 SO it can’t be executed.
 
-again , after time a good idea get into my mind and it was why not to copy the `flag.php` to `flag.txt` and access it with  [http://34.18.3.149:8000/](http://34.18.3.149:8000/xchal.php?name=)flag.txt
+again , after time a good idea get into my mind and it was why not to copy the `flag.php` to `flag.txt` and access it with  [http://34.18.3.149:8000//xchal.php?name=flag.txt]
 
 ![Screenshot (318).png](/assets/img/blog/BLOG%2034a686eb96fd436bb80286dfa0e092a3/Screenshot_(318).png)
 
